@@ -10,5 +10,8 @@
     "build": "npm run build -w frontend",
     "test": "npm test -w frontend",
     "eject": "npm run eject -w frontend"
+  },
+  "engines": {
+    "node": "22.x"
   }
 }
