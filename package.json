@@ -12,6 +12,6 @@
     "eject": "npm run eject -w frontend"
   },
   "engines": {
-    "node": "22.x"
+    "node": "20.x"
   }
 }
