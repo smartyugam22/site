@@ -1,6 +1,16 @@
 {
   "buildCommand": "npm run build",
   "outputDirectory": "frontend/build",
-  "installCommand": "npm install",
-  "framework": "create-react-app"
+  "installCommand": "npm install --legacy-peer-deps",
+  "framework": "create-react-app",
+  "env": {
+    "GENERATE_SOURCEMAP": "false",
+    "NODE_OPTIONS": "--max-old-space-size=4096"
+  },
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
 }
